@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UI&#160;KIT</title>
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <link rel="icon" type="image/x-icon" href="./img/favicons/favicon.svg" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicons/apple-touch-icon.png"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="header__row">
+        <div class="header__logo">
+          <div class="logo">
+            <a href="index.html" class="logo__link">MY&#160;BLOG</a>
+          </div>
+        </div>
+
+        <div class="header__btns">
+          <a href="create-post.php" class="button">Добавить пост</a>
+          <a href="login.html" class="button">Вход</a>
+          <a href="#" class="button toggleDarkMode">🌘</a>
+        </div>
+
+        <div class="header__mobile-nav-btn">
+          <button class="mobile-nav-btn">
+            <div class="nav-icon"></div>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="mobile-nav">
+      <a href="login.html" class="button">Вход</a>
+      <a href="#" class="button toggleDarkMode">🌘</a>
+    </div>
+
+    <main class="docs">
+      <section>
+        <div class="container">
+          <!-- КНОПКИ -->
+          <h3 class="title-3">Кнопки</h3>
+          <div class="ui-block">
+            <a href="#" class="button">Добавить пост</a>
+            <a href="#" class="button">Вход</a>
+            <a href="#" class="button">Выход</a>
+            <a href="#" class="button">☀️</a>
+            <a href="#" class="button">🌘</a>
+          </div>
+
+          <!-- КНОПКИ -->
+          <div class="ui-block mt-20">
+            <a href="#" class="button button--secondary">Редактировать</a>
+            <a href="#" class="button button--secondary">Удалить</a>
+          </div>
+          <!-- 
+           КНОПКИ ДЛЯ ТЁМНОЙ ТЕМЫ
+           Если кнопки лежат в блоки с классом dark 
+           -->
+          <div class="ui-block mt-20 dark">
+            <a href="#" class="button button--secondary">Редактировать</a>
+            <a href="#" class="button button--secondary">Удалить</a>
+          </div>
+          <!-- КНОПКИ -->
+          <div class="ui-block mt-20">
+            <a href="#" class="button button--loadmore">Загрузить ещё</a>
+          </div>
+
+          <div class="ui-block mt-20">
+            <a href="#" class="button button--lg">Обновить</a>
+            <a href="#" class="button button--secondary button--lg">Отмена</a>
+          </div>
+          <!-- Элименты формы -->
+          <h3 class="title-3">Элементы формы</h3>
+
+          <div class="ui-block ui-block--form mt-20">
+            <label class="fieldset">
+              <div class="label">Email</div>
+              <input type="email" id="email" class="input" />
+            </label>
+
+            <label class="fieldset">
+              <div class="label">Пароль</div>
+              <input type="password" id="password" class="input" />
+            </label>
+
+            <label class="fieldset">
+              <div class="label">Название</div>
+              <input type="text" id="text" class="input" />
+            </label>
+
+            <label class="fieldset">
+              <div class="label">Содержание</div>
+              <textarea name="content" id="content" class="textarea"></textarea>
+            </label>
+
+            <fieldset>
+              <div class="label">Обложка</div>
+              <label class="fieldset fieldset--checkbox">
+                <input type="checkbox" />
+                Удалить обложку
+              </label>
+              <input type="file" class="file" />
+            </fieldset>
+          </div>
+
+          <!-- Uikit Пост-->
+          <h3 class="title-3"></h3>
+          <div class="ui-block ui-block--page-bg mt-20">
+            <article class="post">
+              <div class="post__date">16.03.2025</div>
+              <h2 class="post__title">Сила, заключённая в&#160;металле</h2>
+              <div class="post__img--wrapper">
+                <picture>
+                  <source
+                    srcset="
+                      ./img/post/post-img1.webp    1x,
+                      ./img/post/post-img1@2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./img/post/post-img1.jpg    1x,
+                      ./img/post/post-img1@2x.jpg 2x
+                    "
+                    type="image/jpeg"
+                  />
+                  <img
+                    src="./img/post/post-img1.jpg"
+                    alt=""
+                    class="post__img"
+                  />
+                </picture>
+              </div>
+              <div class="post__text">
+                <p>
+                  Некоторые автомобили созданы не&#160;просто для
+                  передвижения&#160;&#8212; они олицетворяют мощь, свободу
+                  и&#160;стиль. Этот мускулистый Dodge Challenger
+                  в&#160;бирюзовом цвете &#160;&#8212; настоящий символ
+                  американской автомобильной культуры. Его агрессивный силуэт,
+                  заниженная посадка и&#160;черные диски говорят сами
+                  за&#160;себя: это машина, которая требует дороги.
+                </p>
+              </div>
+              <div class="post__readmore">
+                <a href="post.html" class="link">Читать далее</a>
+              </div>
+              <div class="post__buttons">
+                <a href="edit-post.html" class="button button--secondary"
+                  >Редактировать</a
+                >
+                <a href="delete-post.html" class="button button--secondary"
+                  >Удалить</a
+                >
+              </div>
+            </article>
+
+            <article class="post">
+              <div class="post__date">16.03.2025</div>
+              <div class="post__text post__text--md">
+                <p>
+                  Горы в&#160;тишине, отражение в&#160;воде&#160;&#8212; мир
+                  застыл, дыша. Шепчет бриз траве, солнце тает за&#160;холмами,
+                  чайка вдаль летит. 🌿✨
+                </p>
+              </div>
+              <div class="post__buttons">
+                <a href="edit-post.html" class="button button--secondary"
+                  >Редактировать</a
+                >
+                <a href="delete-post.html" class="button button--secondary"
+                  >Удалить</a
+                >
+              </div>
+            </article>
+          </div>
+
+          <!-- Секции -->
+          <h3 class="title-3">Секции</h3>
+          <div class="ui-block ui-block--section mt-20">
+            <header class="header">
+              <div class="header__row">
+                <div class="header__logo">
+                  <div class="logo">
+                    <a href="index.html" class="logo__link">MY&#160;BLOG</a>
+                  </div>
+                </div>
+
+                <div class="header__btns">
+                  <a href="create-post.php" class="button">Добавить пост</a>
+                  <a href="login.html" class="button">Вход</a>
+                  <a href="#" class="button toggleDarkMode">🌘</a>
+                </div>
+
+                <div class="header__mobile-nav-btn">
+                  <button class="mobile-nav-btn">
+                    <div class="nav-icon"></div>
+                  </button>
+                </div>
+              </div>
+            </header>
+
+            <div class="mobile-nav">
+              <a href="login.html" class="button">Вход</a>
+              <a href="#" class="button toggleDarkMode">🌘</a>
+            </div>
+
+            <footer class="footer">
+              <div class="container">
+                <div class="footer__copyright">&#169; 2025 MicroBlog</div>
+              </div>
+            </footer>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__copyright">&#169; 2025 MicroBlog</div>
+      </div>
+    </footer>
+
+    <script src="./js/index.bundle.js"></script>
+  </body>
+</html>
